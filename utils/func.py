@@ -23,3 +23,4 @@ def md_to_html(get_MD, n, give_HTML):
     </html>"""
     page_rendered_file.write(head+page_rendered+footer)
     page_rendered_file.close()
+
