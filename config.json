@@ -1,0 +1,24 @@
+{
+  "title": "blog de john doe",
+  "description": "blog gss",
+  "charset": "UTF-8",
+  "lang": "fr",
+  "stylesheets": [
+    "../assets/css/style.css",
+    "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Pacifico&display=swap"
+  ],
+  "scripts": [
+    "<script src=\"assets/js/script.js\"></script>"
+  ],
+  "name": "jbloup",
+  "avatar": "assets/img/avatar.svg",
+  "mail": "johndoe@mail.com",
+  "phone": "0987564533",
+  "links" : {
+    "github": "https://github.com",
+    "gitlab":  "",
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com"
+  },
+  "about": "Forte d’une expérience de deux ans au sein d’un cabinet d’expertise-comptable, je suis à la recherche d’une entreprise afin d’effectuer mon année en licence professionnelle Ressources Humaines pour l’année 2020/2021. En effet, je souhaiterai étoffer mes connaissances en explorant davantage de missions liées à ce domaine. Je suis une personne responsable, autonome et déterminée."
+}

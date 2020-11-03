@@ -1,36 +1,141 @@
 html, body {
- margin: 0;
- padding: 0;
- }
-body {
- background-color: white;
- font-family: Verdana, sans-serif;
- font-size: 100%;
- }
-h1 {
- font-size: 200%;
- color: navy;
- text-align: center;
- }
-h2 {
- font-size: 150%;
- color: red;
- padding-left: 15px;
- }
-p,ul,li,td {
- color: black;
- }
-a:link {
- color: green;
- text-decoration: underline;
- }
-a:visited {
- color: gray;
- }
-a:hover {
- color: red;
- text-decoration: none;
+  scroll-behavior: smooth;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
 }
-a:active, a:focus {
- color: red;
+header{
+    text-align: center;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
+#header-filter{
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    height: 550px;
+    opacity: 0.8;
+}
+#header-picture{
+    text-align:center;
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    z-index: 3;
+}
+#picture{
+    width: 260px;
+    height: 260px;
+    margin: 50px auto;
+    z-index: 1000;
+    position: relative;
+}
+#name{
+    color: #f3f2f1;
+    font-family: 'Pacifico', cursive;
+    z-index: 1000;
+    position: relative;
+    margin: 20px auto auto auto;
+}
+#title{
+    margin-top: 13px;
+    font-family: 'Montserrat',sans-serif,Arial;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: normal;
+    z-index: 1000;
+    position: relative;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+}
+.list{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.list a{
+    min-width: 300px;
+    padding: 25px;
+    margin: 30px auto auto auto;
+    text-decoration: none;
+    box-shadow: 0 5px 5px black;
+}
+.article{
+    min-width: 300px;
+    padding: 25px;
+    margin: 50px auto auto auto;
+    box-shadow: 0 5px 5px black;
+}
+.end{
+    padding: 10px;
+
+}
+footer{
+    margin-top: auto;
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+footer ul{
+    padding: 0;
+    margin: 50px auto auto auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer i{
+    color: #f3f2f1;
+}
+
+@media screen and (max-width: 500px) {
+
+    #picture{
+        margin: 15px auto 20px auto;
+    }
+    #name{
+        margin-top: 0;
+    }
+    #title{
+        margin-top: 35px;
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
