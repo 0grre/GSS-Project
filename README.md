@@ -2,6 +2,8 @@
 
 ## Projet CESI - Générateur de site statique 
 
+lien vers le site: https://jbloup.github.io/GSS-Project/
+
 installation
 - lancer la commande "git clone https://github.com/jbloup/GSS-Project.git" dans le dossier site
 - lancer la commande : "pip install -r requirements.txt"
