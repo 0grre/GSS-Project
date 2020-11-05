@@ -84,7 +84,7 @@ def links_builder():
         with tag('div', klass="list"):
             for article in list_articles:
                 with tag('a', href="articles/"+article):
-                    title = article[:4]
+                    title = article[:-5]
                     text(title)
 
     return indent(doc.getvalue())
