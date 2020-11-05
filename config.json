@@ -4,11 +4,11 @@
   "charset": "UTF-8",
   "lang": "fr",
   "stylesheets": [
-    "../assets/css/style.css",
+    "assets/css/style.css",
     "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Pacifico&display=swap"
   ],
   "scripts": [
-    "<script src=\"assets/js/script.js\"></script>"
+    "assets/js/script.js"
   ],
   "name": "jbloup",
   "avatar": "assets/img/avatar.svg",

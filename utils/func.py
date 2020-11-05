@@ -13,7 +13,7 @@ def md_to_html(get_MD, n, give_HTML):
     header = header_builder(i)
     article_start = container_start()
     article_end = container_end()
-    footer = footer_builder()
+    footer = footer_builder(i)
 
     page_rendered_file.write(head + header + article_start + page_rendered + article_end + footer)
     page_rendered_file.close()
@@ -26,7 +26,7 @@ def index_builder():
     head = head_builder(i)
     header = header_builder(i)
     links = links_builder()
-    footer = footer_builder()
+    footer = footer_builder(i)
 
     index_file.write(head + header + links + footer)
     index_file.close()

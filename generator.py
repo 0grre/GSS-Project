@@ -4,7 +4,7 @@ import sys
 from utils.func import md_to_html, index_builder
 
 get_MD = sys.argv[1]
-give_HTML = sys.argv[2]
+give_HTML = "./articles"
 
 if not os.path.exists(give_HTML):
     os.makedirs(give_HTML)

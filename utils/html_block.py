@@ -26,11 +26,12 @@ def head_builder(i):
             text("")
         with tag('title'):
             text(index.title)
-
+        doc.stag('link', rel="icon", href="favicon.ico")
         for stylesheet in config.get('stylesheets'):
-            doc.stag('link', rel="stylesheet", href=stylesheet, media="all", type="text/css")
-        if i == 1:
-            doc.stag('link', rel="stylesheet", href="assets/css/style.css", media="all", type="text/css")
+            if i != 1:
+                doc.stag('link', rel="stylesheet", href="../" + stylesheet, media="all", type="text/css")
+            else:
+                doc.stag('link', rel="stylesheet", href=stylesheet, media="all", type="text/css")
     doc.asis('<body>')
 
     return indent(doc.getvalue())
@@ -89,9 +90,8 @@ def links_builder():
     return indent(doc.getvalue())
 
 
-def footer_builder():
+def footer_builder(i):
     doc, tag, text = Doc().tagtext()
-
     with tag('footer'):
         with tag('ul'):
             for icon, url in config.get('links').items():
@@ -99,6 +99,14 @@ def footer_builder():
                     with tag('a', href=url):
                         with tag('i', klass="fab fa-" + icon):
                             text("")
+    for script in config.get("scripts"):
+        if i != 1:
+            with tag('script', src="../" + script):
+                text("")
+        else:
+            with tag('script', src=script):
+                text("")
+
     doc.asis('</body>')
     doc.asis('</html>')
     return indent(doc.getvalue())
