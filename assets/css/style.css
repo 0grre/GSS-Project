@@ -53,6 +53,11 @@ header{
     font-size: 4em;
     margin-bottom: 0;
 }
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif,Arial;
+
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -69,7 +74,10 @@ header{
     padding: 25px;
     margin: 30px auto auto auto;
     text-decoration: none;
+    color: black;
+    text-transform: uppercase;
     box-shadow: 0 5px 5px black;
+    font-family: 'Montserrat', sans-serif, Arial;
 }
 .article{
     min-width: 300px;
@@ -80,6 +88,22 @@ header{
 .end{
     padding: 10px;
 
+}
+a{
+    margin: auto;
+}
+button{
+    margin: 50px auto 75px auto;
+    background-color: grey;
+    width: 100px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif,Arial;
+    font-weight: bold;
+    color: #f3f2f1;
+}
+button:hover{
+    background-color: black;
+    color: #f3f2f1;
 }
 footer{
     margin-top: auto;

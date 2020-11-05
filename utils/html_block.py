@@ -67,10 +67,13 @@ def container_end():
 
     with tag('div', klass="end"):
         with tag('h4'):
-            text("Rédigé par : " + author.name)
+            text("Auteur : " + author.name)
         with tag('h5'):
-            text("Publié le : " + d)
+            text("Mis en ligne le : " + d)
     doc.asis('</div>')
+    with tag('a', href="../index.html"):
+        with tag('button'):
+            text('HOME')
     doc.asis('</div>')
     return indent(doc.getvalue())
 
